@@ -1,21 +1,21 @@
 <?php
 /**
  * Plugin Name:       Coding Challenge
- * Plugin URI:        https://michaelsterling.net/
- * Description:       Change background color
+ * Plugin URI:        https://wordpress.org/plugins/coding-challenge
+ * Description:       This plugin creates an admin menu for changing the website's background color.
  * Version:           0.1.0
- * Requires at least: 5.2
- * Requires PHP:      7.2
- * Author:            Mike Sm
- * Author URI:        https://michaelsterling.net/
+ * Requires at least: 5.1
+ * Requires PHP:      5.6
+ * Author:            mikesm1118
+ * Author URI:        https://profiles.wordpress.org/mikesm1118/
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       coding-challenge
  * Domain Path:       /languages
  */
-
-// Prevent outside access
-if (!defined('ABSPATH')) die('No direct access allowed');
+ 
+// Prevent outside access 
+if ( ! defined( 'ABSPATH' ) ) die( 'No direct access allowed' );
 
 // Define plugin filepath
 if ( ! defined( 'CODING_CHALLENGE_FILEPATH' ) ) {
@@ -33,7 +33,7 @@ if ( ! defined( 'CODING_CHALLENGE_VERSION' ) ) {
 }
 
 // Main class location
-require CODING_CHALLENGE_FILEPATH . '/includes/cc-class.php';
+require CODING_CHALLENGE_FILEPATH . '/includes/class-coding-challenge.php';
 
 // Create main object
 $coding_challenge = new Coding_Challenge();
