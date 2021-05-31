@@ -1,29 +1,15 @@
 <?php
 /**
- * Plugin Name:       Coding Challenge
+ * File: class-coding-challenge-admin.php
  *
  * @package Coding_Challenge
  * @subpackage Coding_Challenge_main_class
  * @since 0.1.0 ( plugin creation)
  * @author mikesm1118
- *
- * @wordpress-plugin
- * Plugin Name:       Coding Challenge
- * Plugin URI:        https://wordpress.org/plugins/coding-challenge
- * Description:       This plugin creates an admin menu for changing the website's background color.
- * Version:           0.1.0
- * Requires at least: 5.1
- * Requires PHP:      5.6
- * Author:            mikesm1118
- * Author URI:        https://profiles.wordpress.org/mikesm1118/
- * License:           GPL v2 or later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       coding-challenge
- * Domain Path:       /languages
  */
 
 /**
- * Class:  Coding_Challenge_Admin
+ * Class: Coding_Challenge_Admin
  *
  * Main class and activation hooks.
  *
