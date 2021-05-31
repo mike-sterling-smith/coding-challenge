@@ -123,19 +123,19 @@ class Coding_Challenge {
 			true
 		);
 
-		$option        = get_option( 'background_setting',[] );
-		$setting_field = isset( $option['color_selection']) ? $option['color_selection'] : '';
+		$option        = get_option( 'background_setting', array() );
+		$setting_field = isset( $option['color_selection'] ) ? $option['color_selection'] : '';
 
 		// Passing value to js script.
 		wp_localize_script(
 			'cc-frontend',
 			'ccBG',
-			array($setting_field)
+			array( $setting_field )
 		);
 
 		// Running js script.
 		wp_enqueue_script(
-		  'cc-frontend'
+			'cc-frontend'
 		);
 	}
 

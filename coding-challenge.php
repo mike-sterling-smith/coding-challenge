@@ -1,6 +1,14 @@
 <?php
 /**
  * Plugin Name:       Coding Challenge
+ *
+ * @package Coding_Challenge
+ * @subpackage Coding_Challenge_main_class
+ * @since 0.1.0 ( plugin creation)
+ * @author mikesm1118
+ *
+ * @wordpress-plugin
+ * Plugin Name:       Coding Challenge
  * Plugin URI:        https://wordpress.org/plugins/coding-challenge
  * Description:       This plugin creates an admin menu for changing the website's background color.
  * Version:           0.1.0

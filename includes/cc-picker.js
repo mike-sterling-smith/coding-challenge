@@ -9,6 +9,6 @@
  * @since  0.1.0
  */
 
-jQuery(document).ready(function($){
-	$('.my-color-field').wpColorPicker();
-});
+jQuery( document ).ready( function( $ ) {
+	$( '.my-color-field' ).wpColorPicker();
+} );

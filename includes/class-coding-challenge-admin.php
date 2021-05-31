@@ -77,7 +77,7 @@ class Coding_Challenge_Admin {
 	/**
 	 * Register admin settings.
 	 *
-	 * Adds the plugin features to the admin menu
+	 * Adds the plugin features to the admin menu.
 	 *
 	 * @since 0.1.0
 	 */
@@ -88,7 +88,7 @@ class Coding_Challenge_Admin {
 			''
 		);
 
-	// Add section to options settings.
+		// Add section to options settings.
 		add_settings_section(
 			'setting_section',
 			'Background Settings',
@@ -96,7 +96,7 @@ class Coding_Challenge_Admin {
 			'coding-challenge'
 		);
 
-	// Add field to section.
+		// Add field to section.
 		add_settings_field(
 			'color_selection',
 			'Select background color',
@@ -114,13 +114,12 @@ class Coding_Challenge_Admin {
 	 * @param string $new_value background color value.
 	 *
 	 * @since 0.1.0
-	 *
 	 */
 	public function set_background_color( $new_value ) {
 
 		// Grabbing the color value from the returned array.
-		$option			= get_option( 'background_setting',[] );
-		$setting_field	= isset ( $option['color_selection']) ? $option['color_selection'] : [];
+		$option        = get_option( 'background_setting', array() );
+		$setting_field = isset ( $option['color_selection'] ) ? $option['color_selection'] : array();
 
 		/*
 		 * There's a bug in the twentytwentyone theme that expects the
@@ -142,10 +141,9 @@ class Coding_Challenge_Admin {
 	/**
 	 * Display Section.
 	 *
-	 * Displays the admin menu title
+	 * Displays the admin menu title.
 	 *
 	 * @since 0.1.0
-	 *
 	 */
 	public function display_section() {
 		echo 'Coding Challenge Admin Area';
@@ -157,11 +155,10 @@ class Coding_Challenge_Admin {
 	 * Displays the current background color.
 	 *
 	 * @since 0.1.0
-	 *
 	 */
 	public function display_field() {
-		$option = get_option( 'background_setting',[] );
-		$setting_field = isset ( $option['color_selection']) ? $option['color_selection'] : [];
+		$option        = get_option( 'background_setting', array() );
+		$setting_field = isset ( $option['color_selection'] ) ? $option['color_selection'] : array();
 		?>
 			<input type="text" name='background_setting[color_selection]' value="<?php echo $setting_field; ?>" class="my-color-field" data-default-color="#effeff" />
 		<?php
@@ -173,7 +170,6 @@ class Coding_Challenge_Admin {
 	 * Renders the form in the admin menu.
 	 *
 	 * @since 0.1.0
-	 *
 	 */
 	public function display_admin_page() {
 		?>
@@ -181,9 +177,9 @@ class Coding_Challenge_Admin {
 			<h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
 				<form action="options.php" method="post">
 					<?php
-						settings_fields('background_setting');
-						do_settings_sections('coding-challenge');
-						submit_button('Save Color');
+						settings_fields( 'background_setting' );
+						do_settings_sections( 'coding-challenge' );
+						submit_button( 'Save Color' );
 					?>
 				</form>
 			</div>
