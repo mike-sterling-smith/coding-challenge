@@ -1,7 +1,7 @@
 /**
- * cc-frontend. 
+ * cc-frontend.
  *
- * Renders the background change. 
+ * Renders the background change.
  *
  * @link   URL
  * @file   cc-frontend.js
@@ -9,8 +9,7 @@
  * @since  0.1.0
  */
 
-/** jshint {inline configuration here} */
 jQuery(document).ready(function($){
 	jQuery( 'body' ).addClass( 'cc-custom-background' );
-	jQuery( 'body.cc-custom-background' ).attr( 'style', 'background-color: ' +  ccBG + ' !important' );
+	jQuery( 'body.cc-custom-background' ).attr( 'style', 'background-color: ' +  ccBG[0] + ' !important' );
 });

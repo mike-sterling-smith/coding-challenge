@@ -13,13 +13,15 @@
  * Text Domain:       coding-challenge
  * Domain Path:       /languages
  */
- 
-// Prevent outside access 
-if ( ! defined( 'ABSPATH' ) ) die( 'No direct access allowed' );
+
+// Prevent outside access
+if ( ! defined( 'ABSPATH' ) ) {
+	die( 'No direct access allowed' );
+}
 
 // Define plugin filepath
 if ( ! defined( 'CODING_CHALLENGE_FILEPATH' ) ) {
-	define( 'CODING_CHALLENGE_FILEPATH', plugin_dir_path(__FILE__) );
+	define( 'CODING_CHALLENGE_FILEPATH', plugin_dir_path( __FILE__ ) );
 }
 
 // Define plugin URL
@@ -29,7 +31,7 @@ if ( ! defined( 'CODING_CHALLENGE_URL' ) ) {
 
 // Set plugin version
 if ( ! defined( 'CODING_CHALLENGE_VERSION' ) ) {
-	define( 'CODING_CHALLENGE_VERSION', implode( get_file_data( __FILE__, array( 'Version' ), 'plugin' ) ) );
+	define( 'CODING_CHALLENGE_VERSION', '0.1.0' );
 }
 
 // Main class location

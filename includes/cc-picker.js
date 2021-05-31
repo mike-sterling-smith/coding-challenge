@@ -9,7 +9,6 @@
  * @since  0.1.0
  */
 
-/** jshint {inline configuration here} */
 jQuery(document).ready(function($){
 	$('.my-color-field').wpColorPicker();
 });
